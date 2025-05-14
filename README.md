@@ -28,3 +28,7 @@ expo start -c
 
 # 7. 프로젝트 실행 명령어
 npx expo start
+
+
+# 필수!
+StartScreen.js를 Frontend 폴더 안으로 옮긴 후 작업
