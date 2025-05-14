@@ -1,62 +1,34 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, SafeAreaView } from 'react-native';
+// App.js 모든 화면의 import는 여기서 작성
 
+//React, 네이게이션 관련 패키지 import
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native'; //네이게이션 컨테이너 (앱 전체 감쌈)
+import { createNativeStackNavigator } from '@react-navigation/native-stack'; //스택 네이게이션 생성 (화면 전환의 용이성)
+
+//화면 컴포넌트 import
+import StartScreen from './Frontend/StartScreen'; //StartScreen 컴포넌트
+import HomeScreen from './Frontend/HomeScreen'; //HomeScreen 컴포넌트
+
+//Stack Navigator 생성 (네비게이션 구성 객체)
+const Stack = createNativeStackNavigator();
+
+//루트 컴포넌트
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
-      <View style={styles.hometext}>
-        <Text style={styles.text1 }>약 복용 관리를 시작해볼까요?</Text>
-        <Text style={styles.text2}>알림을 통해 복용 시간을 관리하세요</Text>
-        <TouchableOpacity style={styles.nextbtn}>
-          <Text style={styles.btnText}>NEXT</Text>
-        </TouchableOpacity>
-      </View>
-      <StatusBar style="auto" />
-    </SafeAreaView>
+		//NavigationContainer = 모든 네비게이션을 감싸는 최상위 컴포넌트트
+    <NavigationContainer>
+			 {/* Stack.Navigator는 여러 화면을 스택으로로 관리 */}
+      <Stack.Navigator 
+        RouteName="Start" //시작 시 첫 화면 설정
+        screenOptions={{ 
+					headerShown: false, //상단 헤더 숨기기
+          animation: 'slide_from_right', //화면 전환 애니메이션
+        }}
+      >
+				{/* StartScreen, HomeScreen을 Stack에 등록 */}
+        <Stack.Screen name="Start" component={StartScreen} />
+        <Stack.Screen name="Home" component={HomeScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#4a89dc',
-    // 화면 전체 꽉 채움
-  },
-  hometext: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    flex: 1,
-  },
-  text1: {
-    fontSize: 60,
-    fontWeight: 'bold',
-		alignContent: 'left',
-    color: '#fff',
-    paddingLeft: 50,
-    paddingTop: 500,
-    paddingRight: 30,
-  },
-  text2: {
-    fontSize: 30,
-    fontWeight: 'bold',
-    color: '#fff',
-    paddingLeft: 30,
-    paddingTop: 20,
-    paddingRight: 30,
-  },
-  nextbtn: {
-    backgroundColor: 'orange',
-    width: '80%',
-    paddingVertical: 15,
-    borderRadius: 15,
-    marginTop: 40,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  btnText: {
-    color: '#fff',
-    fontSize: 30,
-    fontWeight: 'bold',
-  }
-});
