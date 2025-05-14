@@ -18,8 +18,6 @@ npm run android
 https://docs.expo.dev/router/installation/
 
 
-https://ambiguous-pleasure-dd6.notion.site/10fb855c510e80c1b2feccdd9cb08a76?p=10fb855c510e81ec94afce68946cb432&pm=s
-
 
 1. 인터넷으로 회원가입 및 핸드폰에 expo go 다운
 
