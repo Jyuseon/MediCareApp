@@ -23,7 +23,7 @@ https://docs.expo.dev/router/installation/
 
 2. Expo 사이트에서 All projects -> Create Project
 
-3. Display Name -> 어플 이름 입력
+3. Display Name -> 프로젝트 이름 입력
 
 4. eas init --id 로 시작하는 명령어 복사 후 터미널에서 입력
 
@@ -31,7 +31,7 @@ https://docs.expo.dev/router/installation/
 
 6. 어플로 터미널에 생성된 QR 코드 인식 (노트북 인터넷과 모바일 인터넷이 일치해야 함)
 
-
+위 과정 완료 후, Git 파일 다운로드하고 파일 옮기기 추천!
 
 
 
