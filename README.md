@@ -56,4 +56,23 @@ expo start -c
 # 7. 프로젝트 실행 명령어
 npx expo start
 
+# 8. React Navigation (화면 이동을 위해 필요합니다)
+npm install @react-navigation/native @react-navigation/stack
 
+# 9. React Navigation 의존성
+npm install react-native-screens react-native-safe-area-context
+
+# 10. 제스처 핸들링 (TouchableOpacity 등의 동작을 위해)
+npm install react-native-gesture-handler
+
+# 1. 애니메이션 라이브러리 (React Navigation에 필요)
+npm install react-native-reanimated
+
+# 12. React Navigation (화면 이동을 위해 필요)
+npm install @react-navigation/native @react-navigation/stack
+
+# 13. React Navigation 의존성
+npx expo install react-native-screens react-native-safe-area-context react-native-gesture-handler
+
+# 14. Gradient 효과를 위한 패키지
+npx expo install expo-linear-gradient
