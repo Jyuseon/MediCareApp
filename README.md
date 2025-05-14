@@ -1,5 +1,12 @@
 "# MediCareApp" 
 
+핸드폰에 Expo Go 설치 필수
+
+npm install --global expo-cli
+npx create-expo-app [프로젝트 명] --template blank
+cd [프로젝트 명]
+npm run android
+
 
 제작 과정 노트북으로 확인
 https://docs.expo.dev/router/installation/
