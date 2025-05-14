@@ -4,7 +4,10 @@
 제작 과정 노트북으로 확인
 https://docs.expo.dev/router/installation/
 
-1. 명령어 실행
+expo 프로젝트 실행 참고
+https://ambiguous-pleasure-dd6.notion.site/10fb855c510e80c1b2feccdd9cb08a76?p=10fb855c510e81ec94afce68946cb432&pm=s
+
+
 # 1. 프로젝트에 필요한 웹 관련 패키지 설치 (웹 지원용)
 npx expo install react-native-web react-dom
 
