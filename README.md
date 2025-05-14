@@ -22,3 +22,6 @@ npx expo install react-native-screens react-native-safe-area-context react-nativ
 
 # 6. 캐시 초기화 후 실행 (필요 시)
 expo start -c
+
+# 7. 프로젝트 실행 명령어
+npx expo start
